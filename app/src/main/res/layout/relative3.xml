@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="230dp"
+       android:background="@drawable/tiltback">
+
+       <ImageView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/baseline_person_pin_24"
+           android:padding="16dp"></ImageView>
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:hint="best place"
+           android:layout_marginTop="16dp"
+           android:layout_marginLeft="70dp"
+           android:textStyle="bold"
+           android:textSize="20dp"></TextView>
+       <ImageView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/baseline_phone_android_24"
+           android:padding="16dp"
+           android:layout_marginLeft="80dp"></ImageView>
+   </LinearLayout>
+
+    <!-- Box in the left corner with item prices and today's date -->
+    <RelativeLayout
+        android:id="@+id/left_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp">
+
+        <TextView
+            android:id="@+id/item_prices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item Prices"
+            android:padding="8dp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Today"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="20dp"
+            android:padding="8dp" />
+
+        <ImageView
+            android:id="@+id/down_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_arrow_downward_24"
+            android:layout_toEndOf="@+id/today"
+            android:layout_marginTop="20dp"
+            android:padding="8dp" />
+ <ImageView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:src="@drawable/icons8_facebook"
+     android:layout_marginTop="60dp"></ImageView>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icons8_google_logo"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="100dp"></ImageView>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icons8_chrome"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="200dp"></ImageView>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icons8_duolingo_logo"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="300dp"></ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="22,000"
+            android:layout_marginTop="110dp"
+            android:layout_marginLeft="10dp"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="24,000"
+            android:layout_marginTop="110dp"
+            android:layout_marginLeft="100dp"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="26,000"
+            android:layout_marginTop="110dp"
+            android:layout_marginLeft="200dp"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="28,000"
+            android:layout_marginTop="110dp"
+            android:layout_marginLeft="300dp"></TextView>
+        <RelativeLayout
+            android:id="@+id/like_comment_share_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EFEFEF"
+
+            android:layout_marginTop="150dp"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/like_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_thumb_up_24"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:id="@+id/like_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Like"
+                android:layout_toEndOf="@+id/like_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="8dp" />
+
+            <ImageView
+                android:id="@+id/comment_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_comment_24"
+                android:layout_toEndOf="@+id/like_text"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp" />
+
+            <TextView
+                android:id="@+id/comment_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Comment"
+                android:layout_toEndOf="@+id/comment_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="8dp" />
+
+            <ImageView
+                android:id="@+id/share_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_share_24"
+                android:layout_toEndOf="@+id/comment_text"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp" />
+
+            <TextView
+                android:id="@+id/share_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Share"
+                android:layout_toEndOf="@+id/share_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="8dp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <!-- Text View for Latest Products in left corner -->
+    <TextView
+        android:id="@+id/latest_products"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Latest Products"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/left_box"
+        android:layout_marginTop="16dp"
+        android:padding="8dp" />
+
+    <!-- Text View for View All in right corner -->
+    <TextView
+        android:id="@+id/view_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View All"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/left_box"
+        android:layout_marginTop="16dp"
+        android:padding="8dp" />
+
+    <!-- Horizontal ScrollView with 5 cards -->
+    <HorizontalScrollView
+        android:id="@+id/cards_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/latest_products"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:id="@+id/cards_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Card 1 - Similar to Card 2, 3, 4, 5 -->
+            <!-- Replace with your card layout -->
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- Text View for Like, Comment, Share with icons in the box -->
+
+
+    <!-- Four Images horizontally -->
+    <LinearLayout
+        android:id="@+id/images_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="350dp">
+
+        <!-- Image 1 - Replace with your images -->
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/flower" />
+
+        <!-- Image 2 - Replace with your images -->
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/flower"
+            android:layout_marginStart="5dp" />
+
+        <!-- Image 3 - Replace with your images -->
+        <ImageView
+            android:id="@+id/image3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/flower"
+            android:layout_marginStart="5dp" />
+
+        <!-- Image 4 - Replace with your images -->
+        <ImageView
+            android:id="@+id/image4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/flower"
+            android:layout_marginStart="5dp" />
+    </LinearLayout>
+
+    <!-- Five Text Views below each image -->
+    <GridLayout
+        android:id="@+id/text_views_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/images_container"
+        android:layout_marginTop="8dp"
+        android:columnCount="5">
+
+        <!-- Text View 1 - Replace with your text -->
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rose "
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:layout_marginEnd="8dp" />
+
+        <!-- Text View 2 - Replace with your text -->
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rose"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:layout_marginEnd="8dp" />
+
+        <!-- Text View 3 - Replace with your text -->
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rose"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:layout_marginEnd="8dp" />
+
+        <!-- Text View 4 - Replace with your text -->
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rose"
+            android:layout_column="3"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:layout_marginEnd="8dp" />
+
+        <!-- Text View 5 - Replace with your text -->
+    </GridLayout>
+
+    <!-- Icon and Text View -->
+    <LinearLayout
+        android:id="@+id/icon_text_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_views_grid"
+        android:layout_marginTop="16dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_person_pin_24" />
+
+        <TextView
+            android:id="@+id/bottom_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Harry"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+    <!-- A single Text View -->
+    <TextView
+        android:id="@+id/single_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New post has been added"
+        android:layout_below="@+id/icon_text_layout"
+        android:layout_centerHorizontal="true" />
+
+    <!-- A single Image -->
+    <ImageView
+        android:id="@+id/single_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/flower"
+        android:layout_below="@+id/single_text"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Five Icons horizontally -->
+    <LinearLayout
+        android:id="@+id/icons_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/single_image"
+        android:layout_marginTop="16dp">
+
+        <!-- Icon 1 - Replace with your icons -->
+        <ImageView
+            android:id="@+id/icon1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/icon1" />
+
+        <!-- Icon 2 - Replace with your icons -->
+        <ImageView
+            android:id="@+id/icon2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/icon2"
+            android:layout_marginStart="16dp" />
+
+        <!-- Icon 3 - Replace with your icons -->
+        <ImageView
+            android:id="@+id/icon3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/icon3"
+            android:layout_marginStart="16dp" />
+
+        <!-- Icon 4 - Replace with your icons -->
+        <ImageView
+            android:id="@+id/icon4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/icon4"
+            android:layout_marginStart="16dp" />
+
+        <!-- Icon 5 - Replace with your icons -->
+        <ImageView
+            android:id="@+id/icon5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/icon5"
+            android:layout_marginStart="16dp" />
+    </LinearLayout>
+
+</RelativeLayout>
+
+
